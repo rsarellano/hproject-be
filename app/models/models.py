@@ -21,3 +21,4 @@ class Questions(Base)
         
     class Answers(Base)
     id = Column(Integer,primary_key=true, index=true)
+    question_id = Column(Integer, ForeignKey("question_id"))
