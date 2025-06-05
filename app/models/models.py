@@ -10,7 +10,7 @@ class Questions(Base)
     is_correct = Column(Boolean, default=False)
     
 
-    class Choice(Base):
+    class Choice(Base)
         __tablename__ = "choices"
 
         id = Column(Integer, primary_key=True, index=True)
