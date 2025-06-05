@@ -19,4 +19,11 @@ class Questions(Base)
         question_id = Column(Integer, ForeignKey("questions.id"))
         
         
-    
+    class Answer(Base):
+        __tablename__ = "answers"
+
+        id = Column(Integer, primary_key=True, index=True)
+        answer_text = Column(String, index=True)
+        question_id = Column(Integer, ForeignKey("questions.id"))
+        
+        
